@@ -14,4 +14,13 @@ public class SendFactory {
             return null;
         }
     }
+
+    public static Sender produceMail(){
+        return new MailSender();
+    }
+
+    public static Sender produceSMS(){
+        return new SmsSender();
+    }
+
 }
